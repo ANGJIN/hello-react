@@ -1,3 +1,8 @@
+# React Tutorial
+
+This is simple tic-tac-toe web app using React Library.  
+Follws guide in [React website](https://reactjs.org/tutorial/tutorial.html)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
