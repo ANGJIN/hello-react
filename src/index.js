@@ -63,13 +63,13 @@ class Game extends React.Component {
     }
     squares[i] = this.state.xIsNext ? "X" : "O";
     this.setState({
-      history: [...history, { squares: squares }],
+      history: [...history, { id:0, squares: squares }],
       currentStep: history.length,
       xIsNext: !this.state.xIsNext,
     });
   }
 
-  jumpTo(step) {
+  jumpTo=(step)=> {
     this.setState({
       currentStep: step,
       xIsNext: step % 2 === 0,
@@ -106,7 +106,7 @@ class Game extends React.Component {
           <div>{status} </div>
           <HistoryList
             history={history}
-            onClick={(i) => this.jumpTo(i)}
+            onClick={this.jumpTo}
           ></HistoryList>
         </div>
       </div>
